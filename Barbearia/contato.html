@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="contato.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+			<main>
+				<form>
+					<label for="nomesobrenome">Nome e Sobrenome</label>
+					<input type="text" id="nomesobrenome" class="input-padrao" placeholder="Digite seu nome completo">
+
+					<label for="email">E-mail</label>
+					<input type="email" id="email" class="input-padrao" placeholder="Digite seu email" required>
+
+					<label for="telefone">Telefone</label>
+					<input type="number" id="telefone" class="input-padrao" placeholder="Digite seu telefone" required>
+
+					<label for="mensagem">Mensagem</label>
+					<textarea cols="70" rows="10" id="mensagem" class="input-padrao" placeholder="Digite sua mensagem"></textarea>
+				<div>
+					<p>Como prefere o nosso contato ?</p>
+					<label for="radio-email"><input type="radio" checked name="contato" value="email" id="radio-email"></textarea>Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"></textarea>Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"></textarea>WhatsApp</label>
+					
+				</div>
+
+				<div>
+					<p>Selecione o horário de sua preferência:</p>
+					<select>
+						<option>10:30</option>
+						<option>11:30</option>
+						<option>13:30</option>
+						<option>14:30</option>
+						<option>15:30</option>
+					</select>
+				</div>
+
+				<label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
+				<input type="submit" value="ENVIAR" class="enviar">
+			
+				</form>
+				<table>
+					<thead>
+						<tr>
+							<th>Dia</th>
+							<th>Horário</th>
+						</tr>
+					</thead>
+
+					<tbody>
+							<tr>
+							<td>Segunda</td>
+							<td>09:30 ~ 21h</td>
+						</tr>
+						<tr>
+							<td>Quarta</td>
+							<td>09:30 ~ 21h</td>
+						</tr>
+						<tr>
+							<td>Sexta</td>
+							<td>09:30 ~ 21h</td>
+						</tr>
+					</tbody>
+				</table>
+			</main>
+        <footer>
+			<img id="foot" src="logo-branco.png">
+			<p class="copy">&copy Copyright BARBERSHOP</p>
+		</footer>
+	</body>
+</html>
